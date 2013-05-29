@@ -1,0 +1,33 @@
+﻿@model Projektdatenbank.Models.TKunde
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>TKunde</legend>
+
+    <div class="display-label">KuName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KuName)
+    </div>
+
+    <div class="display-label">KuVorname</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KuVorname)
+    </div>
+
+    <div class="display-label">KuEmail</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KuEmail)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

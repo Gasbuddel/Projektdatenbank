@@ -1,0 +1,30 @@
+﻿@model Projektdatenbank.Models.TKunde
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TKunde</legend>
+
+    <div class="display-label">KuName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KuName)
+    </div>
+
+    <div class="display-label">KuVorname</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KuVorname)
+    </div>
+
+    <div class="display-label">KuEmail</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KuEmail)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.KuID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
