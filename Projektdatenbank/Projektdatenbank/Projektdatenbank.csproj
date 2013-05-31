@@ -104,6 +104,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\ProjektdatenbankContext.cs" />
     <Compile Include="Models\TKunde.cs" />
+    <Compile Include="Models\TSachmittel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
