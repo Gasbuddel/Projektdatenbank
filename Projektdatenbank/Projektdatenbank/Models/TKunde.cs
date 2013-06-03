@@ -8,7 +8,7 @@ namespace Projektdatenbank.Models
 {
 	public class TKunde
 	{
-		[Required][Key]
+		[Key]
 		public int KuID { get; set; }
 		[Required]
 		public string KuName { get; set; }
